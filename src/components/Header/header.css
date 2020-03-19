@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  background-color: #3b5998;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+img {
+  height: 50px;
+}
+
+p {
+  margin-top: 20px;
+}
+
+#meuPerfil {
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  font-weight: bold;
+}
+
+#profile {
+  border-radius: 30px;
+  height: 35px;
+  margin-left: 15px;
+}
