@@ -23,7 +23,15 @@ class PostList extends Component {
               name: "Yasuozin",
               avatar: profile
             },
-            content: "Show de bola, parabéns!"
+            content: "Show de bola, parabéns! aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          },
+          {
+            id: 2,
+            author: {
+              name: "Rodrigo",
+              avatar: profile
+            },
+            content: "Comentário 02"
           }
         ]
       },
@@ -37,7 +45,7 @@ class PostList extends Component {
         content: "Aquele postezin de ReactJS",
         comments: [
           {
-            id: 1,
+            id: 2,
             author: {
               name: "Yasuozin",
               avatar: profile
