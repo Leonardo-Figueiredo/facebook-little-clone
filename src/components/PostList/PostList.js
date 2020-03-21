@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import profile from '../../assets/profile.jpg';
+import profile from "../../assets/profile.jpg";
+import "./PostList.css";
 
-import './PostList.css';
-
+import Post from "../Post/Post";
 
 class PostList extends Component {
   state = {
     posts: [
-        {
-          id: 1,
-          author: {
-            name: "Leonardo Figueiredo",
-            avatar: profile
-          },
+      {
+        id: 1,
+        author: {
+          name: "Leonardo Figueiredo",
+          avatar: profile
+        },
         date: "04 Jun 2020",
         content: "Opa galera, primeira aplicação com ReactJS!",
         comments: [
@@ -21,24 +21,43 @@ class PostList extends Component {
             id: 1,
             author: {
               name: "Yasuozin",
-              avatar: profile,
+              avatar: profile
             },
-          content: "Show de bola, parabéns!"
+            content: "Show de bola, parabéns!"
           }
         ]
       },
       {
-        
+        id: 2,
+        author: {
+          name: "Leonardo Figueiredo",
+          avatar: profile
+        },
+        date: "06 Jun 2020",
+        content: "Aquele postezin de ReactJS",
+        comments: [
+          {
+            id: 1,
+            author: {
+              name: "Yasuozin",
+              avatar: profile
+            },
+            content: "Zika do baile paizao"
+          }
+        ]
       }
     ]
   };
 
-  render () {
+  render() {
     return (
-      <div id="post-list"></div>
+      <ul id="post-list">
+        {this.state.posts.map(post => (
+          <Post key={post.id} data={post} />
+        ))}
+      </ul>
     );
   }
-
 }
 
 export default PostList;
